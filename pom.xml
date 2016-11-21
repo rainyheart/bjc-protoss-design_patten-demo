@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- COPYRIGHT Ericsson Telecommunicatie B.V., 2011 All rights reserved The copyright to the computer program(s) herein is 
+    the property of Ericsson Telecommunicatie B.V.. The programs may be used and/or copied only with written permission from 
+    Ericsson Telecommunicatie B.V. or in accordance with the terms and conditions stipulated in the agreement/contract under 
+    which the program(s) have been supplied. THIS SOFTWARE IS PROVIDED "AS IS" AND ANY REPRESENTATIONS OR WARRANTIES ABOUT THE 
+    SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, 
+    FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT ARE DISCLAIMED. ERICSSON TELECOMMUNICATIE B.V. SHALL NOT BE LIABLE 
+    FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.bjc.protoss</groupId>
+	<artifactId>design-patten</artifactId>
+	<version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <description></description>
+
+</project>
