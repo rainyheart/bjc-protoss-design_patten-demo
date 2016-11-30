@@ -1,13 +1,12 @@
-package com.bjc.protoss.dp.module.strategy.ken.main;
+package com.bjc.protoss.dp.main.ken;
 
 import com.bjc.protoss.dp.module.strategy.ken.Calculator;
-import com.bjc.protoss.dp.module.strategy.ken.Strategy;
 import com.bjc.protoss.dp.module.strategy.ken.impl.Add;
 import com.bjc.protoss.dp.module.strategy.ken.impl.Divide;
 import com.bjc.protoss.dp.module.strategy.ken.impl.Minus;
 import com.bjc.protoss.dp.module.strategy.ken.impl.Plus;
 
-public class Main {
+public class Strategy {
 	public static void main(String[] args) {
 		add(1, 2, 3, 4, 5, 6);
 		minus(100, 99);
@@ -31,7 +30,7 @@ public class Main {
 		calculate(new Divide(), inputs);
 	}
 
-	private static void calculate(Strategy strategy, double... inputs) {
+	private static void calculate(com.bjc.protoss.dp.module.strategy.ken.Strategy strategy, double... inputs) {
 		Calculator calculator = new Calculator(strategy);
 
 		System.out.println(calculator.calculate(inputs));

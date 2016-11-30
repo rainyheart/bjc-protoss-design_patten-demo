@@ -7,13 +7,12 @@
  * conditions stipulated in the agreement/contract under which the
  * program(s) have been supplied.
  *----------------------------------------------------------------------------*/
-package com.bjc.protoss.dp.module.iterator.ken.main;
+package com.bjc.protoss.dp.main.ken;
 
 import com.bjc.protoss.dp.module.iterator.ken.Collection;
-import com.bjc.protoss.dp.module.iterator.ken.Iterator;
 import com.bjc.protoss.dp.module.iterator.ken.impl.CollectionImpl;
 
-public class Main {
+public class Iterator {
 
 	public static void main(String[] args) {
 		Collection<String> myCollection = new CollectionImpl<String>();
@@ -21,7 +20,7 @@ public class Main {
 		myCollection.add("World");
 		myCollection.add("Protoss");
 		myCollection.add("Team");
-		Iterator<String> it = myCollection.iterator();
+		com.bjc.protoss.dp.module.iterator.ken.Iterator<String> it = myCollection.iterator();
 
 		while (it.hasNext()) {
 			System.out.print(it.next() + " ");

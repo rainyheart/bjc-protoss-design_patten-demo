@@ -1,11 +1,11 @@
-package com.bjc.protoss.dp.module.adapter.ken.main;
+package com.bjc.protoss.dp.main.ken;
 
 import com.bjc.protoss.dp.module.adapter.ken.Message;
 import com.bjc.protoss.dp.module.adapter.ken.Message.Type;
 import com.bjc.protoss.dp.module.adapter.ken.MessageAdapter;
 import com.bjc.protoss.dp.module.adapter.ken.MessageSender;
 
-public class Main {
+public class Adpater {
 	public static void main(String[] args) {
 		MessageAdapter adapter = new MessageAdapter();
 

@@ -1,4 +1,4 @@
-package com.bjc.protoss.dp.module.command.ken.main;
+package com.bjc.protoss.dp.main.ken;
 
 import com.bjc.protoss.dp.module.command.ken.Controller;
 import com.bjc.protoss.dp.module.command.ken.impl.App;
@@ -7,7 +7,7 @@ import com.bjc.protoss.dp.module.command.ken.impl.LockCellphone;
 import com.bjc.protoss.dp.module.command.ken.impl.OpenAppOnCellphone;
 import com.bjc.protoss.dp.module.command.ken.impl.UnlockCellphone;
 
-public class Main {
+public class Command {
 	public static void main(String[] args) {
 		LockCellphone<IPhone> lock = new LockCellphone<IPhone>();
 		UnlockCellphone<IPhone> unlock = new UnlockCellphone<IPhone>();

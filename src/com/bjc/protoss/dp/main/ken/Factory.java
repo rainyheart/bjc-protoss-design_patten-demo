@@ -1,11 +1,11 @@
-package com.bjc.protoss.dp.module.factory.ken.main;
+package com.bjc.protoss.dp.main.ken;
 
 import com.bjc.protoss.dp.module.factory.ken.Car;
 import com.bjc.protoss.dp.module.factory.ken.CarFactory;
 import com.bjc.protoss.dp.module.factory.ken.impl.BMW;
 import com.bjc.protoss.dp.module.factory.ken.impl.Porsche;
 
-public class Main {
+public class Factory {
 
 	public static void main(String[] args) {
 		CarFactory carFactory = new CarFactory();
