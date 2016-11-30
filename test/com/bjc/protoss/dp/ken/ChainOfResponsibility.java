@@ -33,9 +33,13 @@ public class ChainOfResponsibility {
 		Project qq = new Project("QQ", 1000, 100);
 		Client tencent = new Client(qq);
 
-		double revenueQQ = bjc.doProject(tencent.getProject());
+		try {
+			double revenueQQ = bjc.doProject(tencent.getProject());
 
-		System.out.println("The revenue of " + qq + " is " + revenueQQ);
+			System.out.println("The revenue of " + qq + " is " + revenueQQ);
+		} catch (UnsupportedOperationException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 }
