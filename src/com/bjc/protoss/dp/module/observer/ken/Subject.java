@@ -1,11 +1,9 @@
 package com.bjc.protoss.dp.module.observer.ken;
 
-import com.bjc.protoss.dp.module.observer.ken.impl.News;
+public interface Subject<T> {
+	public void register(Observer<T> observer);
 
-public interface Subject {
-	public void register(Observer observer);
+	public void unRegister(Observer<T> observer);
 
-	public void unRegister(Observer observer);
-
-	public void notifyObservers(News message);
+	public void notifyObservers(Topic<T> message);
 }

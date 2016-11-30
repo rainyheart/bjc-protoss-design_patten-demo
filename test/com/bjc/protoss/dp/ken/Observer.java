@@ -2,6 +2,7 @@ package com.bjc.protoss.dp.ken;
 
 import org.junit.Test;
 
+import com.bjc.protoss.dp.module.observer.ken.Subject;
 import com.bjc.protoss.dp.module.observer.ken.impl.News;
 import com.bjc.protoss.dp.module.observer.ken.impl.Sina;
 import com.bjc.protoss.dp.module.observer.ken.impl.Tencent;
@@ -21,11 +22,11 @@ public class Observer {
 
 	@Test
 	public void execute() {
-		com.bjc.protoss.dp.module.observer.ken.Observer sina = new Sina();
-		com.bjc.protoss.dp.module.observer.ken.Observer tencent = new Tencent();
-		com.bjc.protoss.dp.module.observer.ken.Observer times = new Times();
+		com.bjc.protoss.dp.module.observer.ken.Observer<String> sina = new Sina<String>();
+		com.bjc.protoss.dp.module.observer.ken.Observer<String> tencent = new Tencent<String>();
+		com.bjc.protoss.dp.module.observer.ken.Observer<String> times = new Times<String>();
 
-		WhiteHouse whiteHouse = new WhiteHouse();
+		Subject<String> whiteHouse = new WhiteHouse<String>();
 		whiteHouse.register(sina);
 		whiteHouse.register(tencent);
 		whiteHouse.register(times);

@@ -1,12 +1,13 @@
 package com.bjc.protoss.dp.module.observer.ken.impl;
 
 import com.bjc.protoss.dp.module.observer.ken.Observer;
+import com.bjc.protoss.dp.module.observer.ken.Topic;
 
-public class Times implements Observer {
+public class Times<T> implements Observer<T> {
 
 	@Override
-	public void cascade(News news) {
-		System.out.println("Times publish the message: '" + news + "' to news paper");
+	public void cascade(Topic<T> news) {
+		System.out.println("Times publish the message: '" + news.getInformation() + "' to news paper");
 	}
 
 }

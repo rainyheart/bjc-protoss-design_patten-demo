@@ -1,6 +1,9 @@
 package com.bjc.protoss.dp.module.observer.ken.impl;
 
-public class News {
+import com.bjc.protoss.dp.module.observer.ken.Topic;
+
+public class News implements Topic<String> {
+
 	private String newsContent;
 
 	public News(String newsContent) {
@@ -10,5 +13,10 @@ public class News {
 	@Override
 	public String toString() {
 		return newsContent;
+	}
+
+	@Override
+	public String getInformation() {
+		return this.newsContent;
 	}
 }
