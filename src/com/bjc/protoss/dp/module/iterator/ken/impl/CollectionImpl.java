@@ -26,11 +26,13 @@ public class CollectionImpl<E> implements Collection<E> {
 		return iterator;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public E get(int index) {
 		return (E) array[index];
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public E remove(int index) {
 		E removedE = (E) array[index];
@@ -79,6 +81,7 @@ public class CollectionImpl<E> implements Collection<E> {
 
 		private int current = 0;
 
+		@SuppressWarnings("unchecked")
 		@Override
 		public E next() {
 			E e = (E) array[current];
@@ -86,6 +89,7 @@ public class CollectionImpl<E> implements Collection<E> {
 			return e;
 		}
 
+		@SuppressWarnings("unchecked")
 		@Override
 		public E previous() {
 			current--;

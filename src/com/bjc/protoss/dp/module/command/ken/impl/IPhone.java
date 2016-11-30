@@ -15,16 +15,16 @@ public class IPhone implements Target {
 		System.out.println("Your iPhone has been activate and unlocked now");
 	}
 
-	public void openApp(App app) {
-		if (app.equals(this.app)) {
-			System.out.println(app + " has been opened in your iPhone");
+	public void openApp(App targetApp) {
+		if (targetApp.equals(this.app)) {
+			System.out.println(targetApp + " has been opened in your iPhone");
 		} else {
-			System.out.println("Unknow App: " + app + " or it's not installed in this iphone");
+			System.out.println("Unknow App: " + targetApp + " or it's not installed in this iphone");
 		}
 	}
 
-	public void install(App app) {
-		this.app = app;
+	public void install(App targetApp) {
+		this.app = targetApp;
 	}
 
 	@SuppressWarnings("rawtypes")

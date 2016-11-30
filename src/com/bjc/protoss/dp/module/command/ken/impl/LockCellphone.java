@@ -12,8 +12,8 @@ public class LockCellphone<T extends Target> implements Command<T> {
 	}
 
 	@Override
-	public void bind(T target) {
-		this.target = target;
+	public void bind(T targetPhone) {
+		this.target = targetPhone;
 	}
 
 }

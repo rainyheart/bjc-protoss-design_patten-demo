@@ -22,6 +22,9 @@ public class SalseTeam extends AbstractTeam implements Team {
 
 	@Override
 	public double cost(Project project) {
+		if (project.getBudget() > 1000) {
+			return 2;
+		}
 		return 1;
 	}
 

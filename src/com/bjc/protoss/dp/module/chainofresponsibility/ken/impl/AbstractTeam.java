@@ -19,6 +19,7 @@ public abstract class AbstractTeam implements Team {
 		return nextTeam;
 	}
 
+	@Override
 	public void setNextTeam(Team nextTeam) {
 		this.nextTeam = nextTeam;
 	}
