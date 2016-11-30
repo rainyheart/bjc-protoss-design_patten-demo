@@ -8,6 +8,15 @@ import com.bjc.protoss.dp.module.observer.ken.impl.Tencent;
 import com.bjc.protoss.dp.module.observer.ken.impl.Times;
 import com.bjc.protoss.dp.module.observer.ken.impl.WhiteHouse;
 
+/**
+ *
+ * Definition:<br/>
+ * Observer pattern is used when there is one-to-many relationship between
+ * objects such as if one object is modified, its dependent objects are to be
+ * notified automatically. Observer pattern falls under behavioral pattern
+ * category.
+ *
+ */
 public class Observer {
 
 	@Test

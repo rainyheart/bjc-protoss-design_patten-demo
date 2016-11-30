@@ -14,6 +14,15 @@ import org.junit.Test;
 import com.bjc.protoss.dp.module.iterator.ken.Collection;
 import com.bjc.protoss.dp.module.iterator.ken.impl.CollectionImpl;
 
+/**
+ *
+ * Definition:<br/>
+ * Iterator pattern is a commonly used design pattern in Java and .Net
+ * programming environment. This pattern is used to get a way to access the
+ * elements of a collection object in sequential manner without any need to know
+ * its underlying representation.
+ *
+ */
 public class Iterator {
 
 	@Test
