@@ -7,7 +7,9 @@
  * conditions stipulated in the agreement/contract under which the
  * program(s) have been supplied.
  *----------------------------------------------------------------------------*/
-package com.bjc.protoss.dp.main.ken;
+package com.bjc.protoss.dp.ken;
+
+import org.junit.Test;
 
 import com.bjc.protoss.dp.module.interpreter.ken.Expression;
 import com.bjc.protoss.dp.module.interpreter.ken.LocationInterpreter;
@@ -16,7 +18,9 @@ import com.bjc.protoss.dp.module.interpreter.ken.impl.From;
 import com.bjc.protoss.dp.module.interpreter.ken.impl.Goto;
 
 public class Interpreter {
-	public static void main(String[] args) {
+
+	@Test
+	public void execute() {
 		String message = "I will goto school from home now!";
 
 		LocationInterpreter from = new From();

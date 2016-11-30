@@ -1,4 +1,6 @@
-package com.bjc.protoss.dp.main.ken;
+package com.bjc.protoss.dp.ken;
+
+import org.junit.Test;
 
 import com.bjc.protoss.dp.module.factory.ken.Car;
 import com.bjc.protoss.dp.module.factory.ken.CarFactory;
@@ -7,7 +9,8 @@ import com.bjc.protoss.dp.module.factory.ken.impl.Porsche;
 
 public class Factory {
 
-	public static void main(String[] args) {
+	@Test
+	public void execute() {
 		CarFactory carFactory = new CarFactory();
 
 		Car bmw = carFactory.produce(BMW.class);

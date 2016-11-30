@@ -1,4 +1,6 @@
-package com.bjc.protoss.dp.main.ken;
+package com.bjc.protoss.dp.ken;
+
+import org.junit.Test;
 
 import com.bjc.protoss.dp.module.command.ken.Controller;
 import com.bjc.protoss.dp.module.command.ken.impl.App;
@@ -8,7 +10,9 @@ import com.bjc.protoss.dp.module.command.ken.impl.OpenAppOnCellphone;
 import com.bjc.protoss.dp.module.command.ken.impl.UnlockCellphone;
 
 public class Command {
-	public static void main(String[] args) {
+
+	@Test
+	public void execute() {
 		LockCellphone<IPhone> lock = new LockCellphone<IPhone>();
 		UnlockCellphone<IPhone> unlock = new UnlockCellphone<IPhone>();
 		App wechat = new App("Wechat");

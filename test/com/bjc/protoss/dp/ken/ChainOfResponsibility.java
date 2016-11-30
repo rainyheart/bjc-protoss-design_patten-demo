@@ -7,7 +7,9 @@
  * conditions stipulated in the agreement/contract under which the
  * program(s) have been supplied.
  *----------------------------------------------------------------------------*/
-package com.bjc.protoss.dp.main.ken;
+package com.bjc.protoss.dp.ken;
+
+import org.junit.Test;
 
 import com.bjc.protoss.dp.module.chainofresponsibility.ken.Client;
 import com.bjc.protoss.dp.module.chainofresponsibility.ken.Company;
@@ -15,7 +17,8 @@ import com.bjc.protoss.dp.module.chainofresponsibility.ken.Project;
 
 public class ChainOfResponsibility {
 
-	public static void main(String[] args) {
+	@Test
+	public void execute() {
 		Company bjc = new Company("bjc");
 
 		Project taobao = new Project("Taobao", 1000, 50);
