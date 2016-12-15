@@ -5,7 +5,7 @@ import com.bjc.protoss.dp.module.adapter.harry.SourceSub1;
 import com.bjc.protoss.dp.module.adapter.harry.SourceSub2;
 
 /**
- * Created by zhexzhi on 2016/12/14.
+ * Created by zhexzhi on 12/14/2016.
  * 接口的适配器模式，接口的适配器是这样的：
  * 有时我们写的一个接口中有多个抽象方法，
  * 当我们写该接口的实现类时，必须实现该接口的所有方法，这明显有时比较浪费，因为并不是所有的方法都是我们需要的，有时只需要某一些，

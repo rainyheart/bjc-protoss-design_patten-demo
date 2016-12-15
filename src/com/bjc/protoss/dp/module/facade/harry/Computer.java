@@ -1,9 +1,7 @@
 package com.bjc.protoss.dp.module.facade.harry;
 
 /**
- * Created by zhexzhi on 2016/12/14.
- * 外观模式是为了解决类与类之家的依赖关系的,
- * 就是类的关系放在一个Facade类中，降低了类类之间的耦合度
+ * Created by zhexzhi on 12/14/2016.
  */
 public class Computer {
     private CPU cpu;
