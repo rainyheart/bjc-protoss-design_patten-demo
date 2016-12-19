@@ -13,9 +13,9 @@ public class SingletonTest {
 
     public static void main(String[] args) {
 
-        Singleton.getInstance2();
-        Singleton.getInstance1();
         Singleton.getInstance();
+        Singleton.getInstance1();
+        Singleton.getInstance2();
 
     }
 }

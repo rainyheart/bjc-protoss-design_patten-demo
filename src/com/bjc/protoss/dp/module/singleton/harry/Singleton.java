@@ -16,10 +16,10 @@ public class Singleton  {
     }
 
     /* 静态工程方法，创建实例 */
-    public static Singleton getInstance() {
+    public static Singleton getInstance2() {
         if (instance == null) {
             instance = new Singleton();
-            System.out.print("getInstance");
+            System.out.print("getInstance2");
         }
         return instance;
     }
@@ -34,12 +34,12 @@ public class Singleton  {
     }
 
     /*只有在第一次创建对象的时候需要加锁，之后就不需要*/
-    public static Singleton getInstance2() {
+    public static Singleton getInstance() {
         if (instance == null) {
             synchronized (Singleton.class) {
                 if (instance == null) {
                     instance = new Singleton();
-                    System.out.print("getInstance2 只有在第一次创建对象的时候需要加锁，之后就不需要");
+                    System.out.print("getInstance 只有在第一次创建对象的时候需要加锁，之后就不需要");
                 }
             }
         }
