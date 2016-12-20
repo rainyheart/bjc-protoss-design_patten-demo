@@ -2,6 +2,7 @@ package com.bjc.protoss.dp.harry;
 
 import com.bjc.protoss.dp.module.factory.harry.SendFactory;
 import com.bjc.protoss.dp.module.factory.harry.SendFactoryMulti;
+import com.bjc.protoss.dp.module.factory.harry.SendFactoryMultiStatic;
 import com.bjc.protoss.dp.module.factory.harry.Sender;
 
 /**
@@ -17,19 +18,16 @@ public class FactoryMultiTest {
     public static void main(String[] args) {
 
         SendFactoryMulti factory = new SendFactoryMulti();
-
         Sender sender = factory.produceSms();
         sender.Send();
-
         sender = factory.produceMail();
         sender.Send();
 
         System.out.println("------send create by static method---------");
 
-        sender = SendFactoryMulti.produceSms();
+        sender = SendFactoryMultiStatic.produceSms();
         sender.Send();
-
-        sender = SendFactoryMulti.produceMail();
+        sender = SendFactoryMultiStatic.produceMail();
         sender.Send();
 
     }

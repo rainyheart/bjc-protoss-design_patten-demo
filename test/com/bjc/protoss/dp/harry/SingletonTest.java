@@ -13,9 +13,34 @@ public class SingletonTest {
 
     public static void main(String[] args) {
 
-        Singleton.getInstance();
-        Singleton.getInstance1();
-        Singleton.getInstance2();
+
+//        Singleton.getInstance();
+//        Singleton.getInstance1();
+//        Singleton.getInstance2();
+
+        Thread th = new Thread( new Runnable(){
+            @Override
+            public void run() {
+                Singleton.getInstance();
+            }
+        });
+        th.start();
+
+        th = new Thread( new Runnable(){
+            @Override
+            public void run() {
+                Singleton.getInstance1();
+            }
+        } );
+        th.start();
+
+        th = new Thread( new Runnable(){
+            @Override
+            public void run() {
+                Singleton.getInstance2();
+            }
+        } );
+        th.start();
 
     }
 }
