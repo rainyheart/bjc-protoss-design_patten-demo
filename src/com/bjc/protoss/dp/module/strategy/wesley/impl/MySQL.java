@@ -1,8 +1,9 @@
 package com.bjc.protoss.dp.module.strategy.wesley.impl;
 
 import com.bjc.protoss.dp.module.strategy.wesley.DataSource;
+import com.bjc.protoss.dp.module.strategy.wesley.DataSourceStrategy;
 
-public class MySQL implements DataSource {
+public class MySQL implements DataSource, DataSourceStrategy {
 	
 	String key = "";
 	String value = "";
@@ -23,6 +24,12 @@ public class MySQL implements DataSource {
 		} else {
 			return null;
 		}
+	}
+
+	@Override
+	public DataSource getDataSource() {
+		
+		return this;
 	}
 
 }

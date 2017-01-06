@@ -1,8 +1,9 @@
 package com.bjc.protoss.dp.module.strategy.wesley.impl;
 
 import com.bjc.protoss.dp.module.strategy.wesley.DataSource;
+import com.bjc.protoss.dp.module.strategy.wesley.DataSourceStrategy;
 
-public class Redis implements DataSource {
+public class Redis extends MySQL implements DataSource, DataSourceStrategy {
 	
 	String key = "";
 	String value = "";
@@ -12,6 +13,8 @@ public class Redis implements DataSource {
 		System.out.println("Redis setValue." + value);
 		this.key = key;
 		this.value = value;
+		
+		super.setValue(key, value);
 		return value;
 	}
 
@@ -21,8 +24,15 @@ public class Redis implements DataSource {
 		if (this.key.equals(key)) {
 			return value;
 		} else {
-			return null;
+			return super.getValue(key);
 		}
 	}
 
+	@Override
+	public DataSource getDataSource() {
+
+		return this;
+	}
+
+	
 }

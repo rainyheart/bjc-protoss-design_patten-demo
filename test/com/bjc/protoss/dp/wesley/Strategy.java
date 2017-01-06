@@ -3,7 +3,10 @@ package com.bjc.protoss.dp.wesley;
 import org.junit.Test;
 
 import com.bjc.protoss.dp.module.strategy.wesley.DataSource;
+import com.bjc.protoss.dp.module.strategy.wesley.DataSourceStrategy;
 import com.bjc.protoss.dp.module.strategy.wesley.impl.DataSourceMock;
+import com.bjc.protoss.dp.module.strategy.wesley.impl.MySQL;
+import com.bjc.protoss.dp.module.strategy.wesley.impl.Redis;
 
 /**
  * 
@@ -16,11 +19,13 @@ public class Strategy {
 	
 	@Test
 	public void getSetdataSource(){
-		DataSource source1 = new DataSourceMock("db");
+		DataSourceStrategy strategy_db = new MySQL();
+		DataSourceStrategy strategy_db_with_cache = new Redis();
+		DataSource source1 = new DataSourceMock(strategy_db);
 		source1.setValue("name1", "Peter");
 		source1.getValue("name1");
 		
-		DataSource source2 = new DataSourceMock("cache");
+		DataSource source2 = new DataSourceMock(strategy_db_with_cache);
 		source2.setValue("name2", "Amy");
 		source2.getValue("name2");
 	}

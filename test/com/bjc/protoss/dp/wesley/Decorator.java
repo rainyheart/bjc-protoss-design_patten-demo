@@ -11,7 +11,7 @@ import com.bjc.protoss.dp.module.decorator.wesley.impl.RedisDecorator;
  * Decorator attaches additional responsibilities to an object dynamically. Decorators
  * provide a flexible alternative to subclassing for extending functionality.
  * 
- * The pre-condiction is that existing interface should be be changed, and it's required
+ * The pre-condiction is that existing interface should not be changed, and it's required
  * to supplement functions to existing implementations.
  *
  */
