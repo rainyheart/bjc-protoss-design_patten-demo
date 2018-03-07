@@ -1,6 +1,6 @@
-package com.bjc.protoss.dp.module.factory.ken.impl;
+package com.bjc.protoss.dp.module.abstractfactory.ken.impl;
 
-import com.bjc.protoss.dp.module.factory.ken.Car;
+import com.bjc.protoss.dp.module.abstractfactory.ken.Car;
 
 public class Porsche implements Car {
 	public Porsche() {
