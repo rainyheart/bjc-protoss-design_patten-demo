@@ -20,6 +20,13 @@ import com.bjc.protoss.dp.module.bridge.ken.impl.IcbcCard;
 import com.bjc.protoss.dp.module.bridge.ken.impl.NormalPosMachine;
 import com.bjc.protoss.dp.module.bridge.ken.impl.SuperPosMachine;
 
+/**
+ * The bridge pattern is a design pattern used in software engineering
+ * that is meant to "decouple an abstraction from its implementation
+ * so that the two can vary independently", introduced by the Gang of
+ * Four. The bridge uses encapsulation, aggregation, and can use
+ * inheritance to separate responsibilities into different classes.
+ */
 public class Bridge {
 
     @Test

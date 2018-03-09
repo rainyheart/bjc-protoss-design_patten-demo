@@ -3,7 +3,7 @@ package com.bjc.protoss.dp.wesley;
 import org.junit.Test;
 
 import com.bjc.protoss.dp.module.facade.wesley.DataSourceFacade;
-import com.bjc.protoss.dp.module.facade.wesley.impl.DataSourceMock;
+import com.bjc.protoss.dp.module.facade.wesley.impl.DataAccessor;
 
 /**
  * 
@@ -18,7 +18,7 @@ public class Facade {
 	
 	@Test
 	public void getSetData () {
-		DataSourceFacade dataSource = new DataSourceMock();
+		DataSourceFacade dataSource = new DataAccessor();
 		dataSource.setValue("name", "Wesley");
 		dataSource.getValue("name");
 		
