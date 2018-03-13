@@ -10,5 +10,5 @@
 package com.bjc.protoss.dp.module.abstractfactory.ken;
 
 public interface Product {
-
+    public String name();
 }

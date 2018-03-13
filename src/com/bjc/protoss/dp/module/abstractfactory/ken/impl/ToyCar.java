@@ -29,4 +29,9 @@ public class ToyCar implements Car {
 
     }
 
+    @Override
+    public String name() {
+        return "ToyCar";
+    }
+
 }

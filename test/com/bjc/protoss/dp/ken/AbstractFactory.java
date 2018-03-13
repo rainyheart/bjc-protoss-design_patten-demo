@@ -2,9 +2,10 @@ package com.bjc.protoss.dp.ken;
 
 import org.junit.Test;
 
+import com.bjc.protoss.dp.module.abstractfactory.ken.BMWFactory;
 import com.bjc.protoss.dp.module.abstractfactory.ken.Car;
-import com.bjc.protoss.dp.module.abstractfactory.ken.CarFactory;
 import com.bjc.protoss.dp.module.abstractfactory.ken.Factory;
+import com.bjc.protoss.dp.module.abstractfactory.ken.PorscheFactory;
 import com.bjc.protoss.dp.module.abstractfactory.ken.ToyFactory;
 
 /**
@@ -29,17 +30,23 @@ public class AbstractFactory {
     }
 
     @Test
+    public void bmw() {
+        createAndTest("BMW");
+    }
 
-    public void car() {
-        createAndTest("realCar");
+    @Test
+    public void porsche() {
+        createAndTest("Porsche");
     }
 
     private void createAndTest(String parameter) {
         Factory factory = null;
         if ("toy".equalsIgnoreCase(parameter)) {
             factory = new ToyFactory();
-        } else if ("realCar".equalsIgnoreCase(parameter)) {
-            factory = new CarFactory();
+        } else if ("BMW".equalsIgnoreCase(parameter)) {
+            factory = new BMWFactory();
+        } else if ("Porsche".equalsIgnoreCase(parameter)) {
+            factory = new PorscheFactory();
         } else {
             System.err.println("Invalid parameter");
             return;
