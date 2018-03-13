@@ -1,0 +1,37 @@
+1. 介绍设计模式的诞生过程以及一些背景。
+2. 介绍23种设计模式的分类
+3. high level介绍23种设计模式各自的定义
+4. 逐个介绍每个设计模式
+   4.1 详细介绍设计模式的定义
+   4.2 介绍设计模式的运用场景
+   4.3 使用代码介绍设计模式
+   4.4 运行代码demo介绍设计模式
+   4.5 分析设计模式的优点，以及适用场景，实际项目运用的优缺点
+5. 对比其他设计模式的差异
+6. Q&A
+
+Day 1 	AM: Software Design Principles (1-14)
+		PM: Abstract factory 
+			Builder 
+			Factory method 
+			Prototype 
+			Singleton 
+Day 2	AM: Adapter 
+			Bridge
+			Composite
+		PM: Decorator
+			Facade 
+			Flyweight
+			Proxy 
+Day 3	AM: Chain of responsibility
+			Command
+			Interpreter
+		PM: Iterator 
+			Mediator 
+			Memento
+Day 4	AM: Observer 
+			State 
+			Strategy 
+		PM: Template method 
+			Visitor 
+				Summary
