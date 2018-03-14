@@ -18,6 +18,12 @@ import com.bjc.protoss.dp.module.memento.ken.Data;
 import com.bjc.protoss.dp.module.memento.ken.IMemento;
 import com.bjc.protoss.dp.module.memento.ken.ProjectManager;
 
+/**
+ * Definition:<br/>
+ * The memento pattern is a software design pattern that provides the
+ * ability to restore an object to its previous state (undo via
+ * rollback).
+ */
 public class Memento {
 
     List<IMemento> savedStates = new ArrayList<>();

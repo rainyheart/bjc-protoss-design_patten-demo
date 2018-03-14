@@ -8,6 +8,7 @@ import com.bjc.protoss.dp.module.decorator.wesley.impl.RedisDecorator;
 
 /**
  *
+ * Definition:<br/>
  * Decorator attaches additional responsibilities to an object
  * dynamically. Decorators
  * provide a flexible alternative to subclassing for extending

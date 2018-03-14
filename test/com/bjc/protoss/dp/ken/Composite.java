@@ -20,6 +20,7 @@ import com.bjc.protoss.dp.module.composite.ken.impl.Parknshop;
 import com.bjc.protoss.dp.module.composite.ken.impl.ParknshopGroup;
 
 /**
+ * Definition:<br/>
  * The composite pattern describes a group of objects that is treated
  * the same way as a single instance of the same type of object. The
  * intent of a composite is to "compose" objects into tree structures

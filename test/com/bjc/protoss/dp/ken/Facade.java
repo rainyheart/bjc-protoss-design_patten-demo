@@ -8,6 +8,7 @@ import com.bjc.protoss.dp.module.facade.wesley.impl.DataAccessor;
 
 /**
  *
+ * Definition:<br/>
  * Provide a unified interface to a set of interfaces in a subsystem.
  * Facade
  * defines a higher-level interface that makes the subsystem easier to

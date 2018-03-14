@@ -17,10 +17,11 @@ import com.bjc.protoss.dp.module.factorymethod.ken.car.impl.PorscheFactory;
 import com.bjc.protoss.dp.module.factorymethod.ken.toy.impl.LegoFactory;
 
 /**
+ * Definition:<br/>
  * Define an interface for creating an object, but let subclasses
  * decide which class to instantiate. The Factory method lets a class
  * defer instantiation it uses to subclasses
- * 
+ *
  */
 public class FactoryMethod {
 

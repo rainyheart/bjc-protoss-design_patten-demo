@@ -21,6 +21,7 @@ import com.bjc.protoss.dp.module.bridge.ken.impl.NormalPosMachine;
 import com.bjc.protoss.dp.module.bridge.ken.impl.SuperPosMachine;
 
 /**
+ * Definition:<br/>
  * The bridge pattern is a design pattern used in software engineering
  * that is meant to "decouple an abstraction from its implementation
  * so that the two can vary independently", introduced by the Gang of
