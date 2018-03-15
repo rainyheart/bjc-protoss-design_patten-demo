@@ -64,10 +64,10 @@ public class Visitor {
 
     @Test
     public void financeVisitor() {
-        Department hr = new FinanceDepartment();
+        Department finance = new FinanceDepartment();
 
         for (Employee employee : team) {
-            employee.accept(hr);
+            employee.accept(finance);
         }
     }
 }
