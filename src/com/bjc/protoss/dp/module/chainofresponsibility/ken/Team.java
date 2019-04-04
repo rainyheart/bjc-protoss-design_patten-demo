@@ -11,7 +11,7 @@ package com.bjc.protoss.dp.module.chainofresponsibility.ken;
 
 public interface Team {
 	public enum Responsibility {
-		Salse(0), Requirement(1), Design(2), Development(3), Testing(4), Integration(5), Deployment(6), Support(7);
+		Sales(0), Requirement(1), Design(2), Development(3), Testing(4), Integration(5), Deployment(6), Support(7);
 
 		private int level;
 

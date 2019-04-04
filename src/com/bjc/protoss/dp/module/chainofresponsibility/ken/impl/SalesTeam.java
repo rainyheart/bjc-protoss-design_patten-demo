@@ -12,9 +12,9 @@ package com.bjc.protoss.dp.module.chainofresponsibility.ken.impl;
 import com.bjc.protoss.dp.module.chainofresponsibility.ken.Project;
 import com.bjc.protoss.dp.module.chainofresponsibility.ken.Team;
 
-public class SalseTeam extends AbstractTeam implements Team {
+public class SalesTeam extends AbstractTeam implements Team {
 
-	private Responsibility responsibility = Responsibility.Salse;
+	private Responsibility responsibility = Responsibility.Sales;
 
 	public Responsibility getResponsibility() {
 		return responsibility;

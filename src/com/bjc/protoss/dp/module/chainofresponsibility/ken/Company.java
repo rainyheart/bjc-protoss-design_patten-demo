@@ -12,7 +12,7 @@ package com.bjc.protoss.dp.module.chainofresponsibility.ken;
 import com.bjc.protoss.dp.module.chainofresponsibility.ken.impl.DesignTeam;
 import com.bjc.protoss.dp.module.chainofresponsibility.ken.impl.DevelopmentTeam;
 import com.bjc.protoss.dp.module.chainofresponsibility.ken.impl.RequirementTeam;
-import com.bjc.protoss.dp.module.chainofresponsibility.ken.impl.SalseTeam;
+import com.bjc.protoss.dp.module.chainofresponsibility.ken.impl.SalesTeam;
 import com.bjc.protoss.dp.module.chainofresponsibility.ken.impl.SupportTeam;
 import com.bjc.protoss.dp.module.chainofresponsibility.ken.impl.TestTeam;
 
@@ -22,7 +22,7 @@ public class Company {
 	private Team firstTeam;
 
 	public Company(String companyName) {
-		Team salse = new SalseTeam();
+		Team salse = new SalesTeam();
 		Team requiement = new RequirementTeam();
 		Team design = new DesignTeam();
 		Team development = new DevelopmentTeam();

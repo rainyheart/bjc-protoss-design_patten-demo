@@ -14,7 +14,7 @@ import com.bjc.protoss.dp.module.chainofresponsibility.ken.Team;
 
 public class DevelopmentTeam extends AbstractTeam implements Team {
 
-	private Responsibility responsibility = Responsibility.Deployment;
+	private Responsibility responsibility = Responsibility.Development;
 
 	public Responsibility getResponsibility() {
 		return responsibility;

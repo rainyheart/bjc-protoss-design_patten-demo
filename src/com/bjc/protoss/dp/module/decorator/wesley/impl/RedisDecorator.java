@@ -15,14 +15,14 @@ public class RedisDecorator implements DataCache {
     @Override
     public String setValue(String key, String value) {
         String result = cache.setValue(key, value);
-        System.out.println("*** Log [RedisDecorator set opertion accumulated count:" + ++setOperation + "]");
+        System.out.println("*** Log [RedisDecorator set operation accumulated count:" + ++setOperation + "]");
         return result;
     }
 
     @Override
     public String getValue(String key) {
         String result = cache.getValue(key);
-        System.out.println("*** Log [RedisDecorator get opertion accumulated count:" + ++getOperation + "]");
+        System.out.println("*** Log [RedisDecorator get operation accumulated count:" + ++getOperation + "]");
         return result;
     }
 
