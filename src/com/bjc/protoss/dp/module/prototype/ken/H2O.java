@@ -40,10 +40,12 @@ public class H2O implements Cloneable {
         return clone;
     }
 
-    @SuppressWarnings("unchecked")
     public H2O deepClone() {
         H2O clone = this.clone();
-        clone.structure = (Set<Atom>) ((HashSet<Atom>) this.structure).clone();
+        clone.structure = new HashSet<>();
+        for(Atom atom : structure) {
+            clone.structure.add(atom.clone());
+        }
         return clone;
     }
 
